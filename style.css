@@ -1,0 +1,153 @@
+/* STYLE GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* HEADER */
+.hero {
+  background: url('header-water.jpg') center/cover no-repeat;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(25, 82, 124, 0.7);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.cta-buttons .btn, .cta-buttons .btn-outline {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.btn {
+  background: #4caf50;
+  color: #fff;
+}
+
+.btn-outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #19527C;
+}
+
+/* SERVICES */
+.services {
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background: #19527C;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+/* ABOUT */
+.about {
+  padding: 40px;
+  background: #e0f7fa;
+  text-align: center;
+}
+
+/* TESTIMONIALS */
+.testimonials {
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.testimonial {
+  max-width: 500px;
+  margin: auto;
+  font-style: italic;
+}
+
+/* CONTACT */
+.contact {
+  padding: 40px;
+  background: #e0f7fa;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  background: #4caf50;
+  color: #fff;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #45a049;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background: #19527C;
+  color: #fff;
+  text-align: center;
+}
