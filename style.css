@@ -151,3 +151,10 @@ footer {
   color: #fff;
   text-align: center;
 }
+.service-card img {
+    width: 100%;
+    height: 200px; /* fixe la hauteur pour tout égaliser */
+    object-fit: cover; /* recadre sans déformer */
+    border-radius: 10px; /* arrondit les coins (optionnel) */
+    display: block;
+}
