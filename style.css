@@ -158,15 +158,14 @@ footer {
     border-radius: 10px; /* arrondit les coins (optionnel) */
     display: block;
 }
-/* Effet vitre embuée avec gouttes */
 .glass-effect {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(6px);
-    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(2px); /* réduit le flou */
+    background: rgba(255, 255, 255, 0.03);
     pointer-events: none;
     overflow: hidden;
     z-index: 999;
@@ -174,22 +173,21 @@ footer {
 
 .raindrop {
     position: absolute;
-    width: 2px;
-    height: 30px;
-    background: rgba(255, 255, 255, 0.3);
+    width: 5px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
-    animation: drop 4s linear infinite;
+    animation: fall 5s linear infinite;
 }
 
-.raindrop:nth-child(1) { left: 10%; animation-delay: 0s; }
-.raindrop:nth-child(2) { left: 30%; animation-delay: 1s; }
-.raindrop:nth-child(3) { left: 50%; animation-delay: 2s; }
-.raindrop:nth-child(4) { left: 70%; animation-delay: 1.5s; }
-.raindrop:nth-child(5) { left: 85%; animation-delay: 0.5s; }
-.raindrop:nth-child(6) { left: 95%; animation-delay: 2.5s; }
+.raindrop:nth-child(1) { left: 10%; animation-delay: 0s; transform: rotate(15deg); }
+.raindrop:nth-child(2) { left: 30%; animation-delay: 1s; transform: rotate(-10deg); }
+.raindrop:nth-child(3) { left: 50%; animation-delay: 2s; transform: rotate(20deg); }
+.raindrop:nth-child(4) { left: 70%; animation-delay: 1.5s; transform: rotate(-15deg); }
+.raindrop:nth-child(5) { left: 85%; animation-delay: 0.5s; transform: rotate(10deg); }
+.raindrop:nth-child(6) { left: 95%; animation-delay: 2.5s; transform: rotate(-20deg); }
 
-@keyframes drop {
-    0% { top: -30px; opacity: 0; }
-    10% { opacity: 1; }
-    100% { top: 100%; opacity: 0; }
+@keyframes fall {
+    0% { top: -20px; }
+    100% { top: 100%; }
 }
