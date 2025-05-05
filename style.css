@@ -164,8 +164,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    backdrop-filter: blur(2px); /* réduit le flou */
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.05); /* presque transparent */
     pointer-events: none;
     overflow: hidden;
     z-index: 999;
@@ -173,11 +172,11 @@ footer {
 
 .raindrop {
     position: absolute;
-    width: 5px;
-    height: 15px;
-    background: rgba(255, 255, 255, 0.4);
+    width: 3px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    animation: fall 5s linear infinite;
+    animation: fall 6s linear infinite;
 }
 
 .raindrop:nth-child(1) { left: 10%; animation-delay: 0s; transform: rotate(15deg); }
@@ -188,6 +187,7 @@ footer {
 .raindrop:nth-child(6) { left: 95%; animation-delay: 2.5s; transform: rotate(-20deg); }
 
 @keyframes fall {
-    0% { top: -20px; }
-    100% { top: 100%; }
+    0% { top: -20px; opacity: 0; }
+    10% { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
 }
