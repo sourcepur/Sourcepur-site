@@ -158,3 +158,42 @@ footer {
     border-radius: 10px; /* arrondit les coins (optionnel) */
     display: block;
 }
+body {
+  background-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.main-nav a:hover {
+  color: #007BFF;
+}
