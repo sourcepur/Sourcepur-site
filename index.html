@@ -67,18 +67,21 @@
       <span>— Client satisfait</span>
     </div>
   </section>
-
-  <section class="contact" id="contact">
-    <h2>Contactez-nous</h2>
-    <p>Sourcepur — 65 rue de la Croix, Nanterre</p>
-    <p>Tél : 07 52 12 00 44 — Email : sourcepur.service@gmail.com</p>
-    <section class="contact" id="contact">
+<section class="contact" id="contact">
   <h2>Contactez-nous</h2>
   <p>Sourcepur — 65 rue de la Croix, Nanterre</p>
   <p>Tél : 07 52 12 00 44 — Email : sourcepur.service@gmail.com</p>
-  <form name="contact" method="POST" data-netlify="true">
+  <form name="contact" method="POST" data-netlify="true" class="contact-form">
     <input type="text" name="nom" placeholder="Nom" required>
     <input type="email" name="email" placeholder="Email" required>
+    <select name="service" required>
+      <option value="">Sélectionnez un service</option>
+      <option value="plomberie">Plomberie</option>
+      <option value="chauffage">Chauffage</option>
+      <option value="osmoseur">Osmoseur</option>
+      <option value="adoucisseur">Adoucisseur</option>
+      <option value="projet">Création de projet</option>
+    </select>
     <textarea name="message" placeholder="Votre message..." required></textarea>
     <button type="submit">Envoyer</button>
   </form>
