@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sourcepur</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourcepur - Votre eau à domicile</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripts.js"></script>
 </head>
 <body>
-    <!-- HERO -->
-    <header class="hero">
-        <h1>Sourcepur</h1>
-        <p>L’expert au service de votre eau</p>
-        <p>Protégez vos appareils, économisez sur vos factures</p>
-    </header>
+    <div class="glass-effect">
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+    </div>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Sourcepur</h1>
+      <p class="slogan">Votre eau écologique, économique et santé à domicile</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn">Demander un devis</a>
+        <a href="#contact" class="btn-outline">Nous contacter</a>
+      </div>
+    </div>
+  </header>
 
-    <!-- SERVICES -->
-    <section class="services">
-        <div class="service-card">
-            <img src="plomberie.jpg" alt="Plomberie">
-            <h2>Plomberie</h2>
-            <p>Confort, durabilité et expertise pour vos installations sanitaires.</p>
-        </div>
-        <div class="service-card">
-            <img src="chauffage.jpg" alt="Chauffage">
-            <h2>Chauffage</h2>
-            <p>Des solutions éco-performantes pour un intérieur bien chauffé.</p>
-        </div>
-        <div class="service-card">
-            <img src="osmoseur.jpg" alt="Osmoseur">
-            <h2>Osmoseur & Adoucisseur</h2>
-            <p>Une eau pure, douce et saine, directement chez vous.</p>
-        </div>
-        <div class="service-card">
-            <img src="projet.jpg" alt="Projets">
-            <h2>Projets tous corps d’état</h2>
-            <p>Un accompagnement global pour vos rénovations et constructions.</p>
-        </div>
-    </section>
+  <section class="services">
+  <h2>Nos services</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <img src="plomberie.jpg" alt="Plomberie" style="width:100%; border-radius:10px;">
+      <h3>Plomberie</h3>
+      <p>Confort, durabilité et expertise pour vos installations sanitaires.</p>
+    </div>
+    <div class="service-card">
+      <img src="chauffage.jpg" alt="Chauffage" style="width:100%; border-radius:10px;">
+      <h3>Chauffage</h3>
+      <p>Des solutions éco-performantes pour un intérieur bien chauffé.</p>
+    </div>
+    <div class="service-card">
+      <img src="osmoseur.jpg" alt="Osmoseur" style="width:100%; border-radius:10px;">
+      <h3>Osmoseur & Adoucisseur</h3>
+      <p>Une eau pure, douce et saine, directement chez vous.</p>
+    </div>
+    <div class="service-card">
+      <img src="projet.jpg" alt="Projets" style="width:100%; border-radius:10px;">
+      <h3>Projets tous corps d’état</h3>
+      <p>Un accompagnement global pour vos rénovations et constructions.</p>
+    </div>
+  </div>
+</section>
 
-    <!-- CONTACT -->
-    <section class="contact">
-        <h2>Contactez-nous</h2>
-        <p>Sourcepur, 65 rue de la Croix, Nanterre</p>
-        <p>Tél : 07 51 12 00 44 - Email : sourcepur.service@gmail.com</p>
-    </section>
+  <section class="about">
+    <h2>À propos</h2>
+    <p>Sourcepur est née de la volonté de créer des maisons plus saines et plus responsables. Fondée par des passionnés de bien-être et de solutions durables, notre entreprise accompagne ses clients dans tous leurs projets d'eau, de confort et d'économie. Depuis plus de 14 ans, nous construisons un avenir plus sain pour vous, votre famille et votre planète.</p>
+  </section>
+
+  <section class="testimonials">
+    <h2>Avis clients</h2>
+    <div class="testimonial">
+      <p>"Service professionnel et à l'écoute. Mon adoucisseur fonctionne parfaitement !"</p>
+      <span>— Client satisfait</span>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contactez-nous</h2>
+    <p>Sourcepur — 65 rue de la Croix, Nanterre</p>
+    <p>Tél : 07 52 12 00 44 — Email : sourcepur.service@gmail.com</p>
+    <form>
+      <input type="text" placeholder="Nom" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Votre message..." required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2024 Sourcepur — Tous droits réservés.</p>
+    <p>Mentions légales | Politique de confidentialité</p>
+  </footer>
 </body>
 </html>
