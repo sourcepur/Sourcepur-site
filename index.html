@@ -8,27 +8,25 @@
   <script defer src="scripts.js"></script>
 </head>
 <body>
-  <nav class="main-nav">
-    <div class="logo">Sourcepur</div>
-    <ul>
-      <li><a href="#hero">Accueil</a></li>
-      <li><a href="#services">Nos services</a></li>
-      <li><a href="#produits">Produits en vente</a></li>
-      <li><a href="#testimonials">Avis</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <header class="hero" id="hero">
-    <h1>Sourcepur</h1>
-    <p class="slogan">Votre eau écologique, économique et santé à domicile</p>
-    <div class="cta-buttons">
-      <a href="#contact" class="btn">Demander un devis</a>
-      <a href="#contact" class="btn-outline">Nous contacter</a>
+    <div class="glass-effect">
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+        <div class="raindrop"></div>
+    </div>
+  <header class="hero">
+    <div class="overlay">
+      <h1>Sourcepur</h1>
+      <p class="slogan">Votre eau écologique, économique et santé à domicile</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn">Demander un devis</a>
+        <a href="#contact" class="btn-outline">Nous contacter</a>
+      </div>
     </div>
   </header>
-</body>
-</html>
+
   <section class="services">
   <h2>Nos services</h2>
   <div class="service-grid">
@@ -66,16 +64,29 @@
       <p>"Service professionnel et à l'écoute. Mon adoucisseur fonctionne parfaitement !"</p>
       <span>— Client satisfait</span>
     </div>
-  </section>
 <section class="contact" id="contact">
   <h2>Contactez-nous</h2>
   <p>Sourcepur — 65 rue de la Croix, Nanterre</p>
   <p>Tél : 07 52 12 00 44 — Email : sourcepur.service@gmail.com</p>
-  <<a href="https://docs.google.com/forms/d/e/1FAIpQLSd5SeG_HdzX8Rge9bQV8YnmTOV0t8dsZt10OqHQzZ34QHcbMQ/viewform?usp=header" target="_blank" class="btn">Remplir le formulaire Sourcepur</a>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="text" name="nom" placeholder="Nom" required>
+    <input type="email" name="email" placeholder="Email" required>
+    
+    <label for="service">Choisissez un service :</label>
+    <select name="service" id="service" required>
+      <option value="Plomberie">Plomberie</option>
+      <option value="Chauffage">Chauffage</option>
+      <option value="Osmoseur">Osmoseur</option>
+      <option value="Adoucisseur">Adoucisseur</option>
+      <option value="Création de projet">Création de projet</option>
+    </select>
+
     <textarea name="message" placeholder="Votre message..." required></textarea>
     <button type="submit">Envoyer</button>
   </form>
 </section>
+
   <footer>
     <p>© 2024 Sourcepur — Tous droits réservés.</p>
     <p>Mentions légales | Politique de confidentialité</p>
